@@ -22,4 +22,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+	public function test()
+	{
+		var_dump(is_table_exist('hi'));
+		//print_r(get_table_where('youtube', ['views !='	=>	2]));
+	}
 }
